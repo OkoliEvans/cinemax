@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+}
+
+.app {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app h1 {
+  padding-top: 0;
+  font-family: monospace ;
+  color: rgb(189, 245, 229);
+  font-size: 4rem;
+}
+
+.container {
+  position: relative;
+  border-radius: 12px;
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 300px;
+  height: 28em;
+  margin: 1em;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.movie:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+  height: 100%;
+  width: 100%;
+}
+
+.movie img:hover {
+  opacity: 0.7;
+}
+
+.movie div:nth-of-type(1) {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  color: #f9d3b4;
+}
+
+.movie div:nth-of-type(1):hover {
+  opacity: 1;
+}
+
+.movie p:nth-of-type(1) {
+  z-index: 2;
+  background: rgb(58,184,56);
+  background: linear-gradient(90deg, rgba(58,184,56,1) 0%, rgba(56,150,146,1) 55%, rgba(5,16,112,1) 99%);
+  color: #f9f899;
+  padding: 8px 10px 10px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.search input {
+  width: 18em;
+  height: 3em;
+  margin: 1em ;
+  outline: none;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  font-weight: 500;
+  justify-content: center;
+  height: 3em;
+  width: 12em;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background: rgb(107, 168, 107);
+  border: none;
+}
+
+.btn:disabled:hover {
+  cursor: unset;
+  opacity: unset;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width:700px) {
+  .app {
+    padding: 4rem 2rem;
+    width: 100%;
+  }
+
+  .app h1 {
+    color: rgb(62, 243, 62);
+  }
+
+  .search input{
+    width: 80%;
+  }
+
+  .btn {
+    width: 95%;
+  }
+
+  .search input {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app {
+    padding: 4rem 1rem;
+  }
+
+
+  .container {
+    margin-top: 2rem;
+  }
+
+  .movie {
+    width: 100%;
+    margin: 1rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
