@@ -132,6 +132,7 @@ body {
 
   .search input{
     width: 80%;
+    background-color: #FFF;
   }
 
   .btn {
@@ -148,6 +149,9 @@ body {
     padding: 4rem 1rem;
   }
 
+  .search input {
+    background-color: #FFF;
+  }
 
   .container {
     margin-top: 2rem;
