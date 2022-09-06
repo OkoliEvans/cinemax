@@ -27,7 +27,7 @@ const GlobalState = ({ children }) => {
   const handleSubmit = async () => {
     setLoading(true);
     const response = await fetch(
-      `http://www.omdbapi.com/?s=${searchParam}&apikey=70c11897`
+      `https://www.omdbapi.com/?s=${searchParam}&apikey=70c11897`
     );
     const data = await response.json();
     console.log(data);
