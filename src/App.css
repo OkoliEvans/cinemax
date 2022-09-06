@@ -133,6 +133,7 @@ body {
   .search input{
     width: 80%;
     background-color: #FFF;
+    outline: none;
   }
 
   .btn {
@@ -151,6 +152,7 @@ body {
 
   .search input {
     background-color: #FFF;
+    outline: none;
   }
 
   .container {
