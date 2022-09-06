@@ -90,7 +90,9 @@ body {
   height: 3em;
   margin: 1em ;
   outline: none;
-  color: rgb(75, 247, 7);
+  color: rgb(28, 77, 9);
+  font-weight: 800;
+  font-size: 17px;
 }
 
 .btn {
